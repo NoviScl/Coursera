@@ -30,4 +30,22 @@ int main(){
      		max2 = i;
      }
      cout<<(long long)a[max1]*a[max2];
+
+
+
+     //Alternative O(n):
+     //divide into pairs, choose out the bigger ones and the largest one, (n/2)
+     //the second largest one is from the bigger array or the other element from that largest pair
+
+     //(n+logn) comparisons:
+     //do recursion to find the L and S in that bigger array
+     //refer to: https://cs.stackexchange.com/questions/83022/find-largest-and-second-largest-elements-of-the-array/83056#83056
 }
+
+
+
+
+
+
+
+
