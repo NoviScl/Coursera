@@ -7,6 +7,9 @@ using namespace std;
 void partition2(vector<int> &a, int l, int r, int &m1, int &m2) {
   int pivot = a[l];
   int lt = l, gt = r;	//before lt: all less than pivot, after gt: all greater than pivot
+  //in the process:
+  //lt: the leftmost element in the equal chunk, 
+  //gt: one element before the gt chunk
   int i=l+1;
   while(i<=gt){
   	if(a[i]<pivot){

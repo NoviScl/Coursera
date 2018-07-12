@@ -28,12 +28,17 @@ int main(){
     remain=n%t;
     fibo[0]=0;
     fibo[1]=1;
+    //ignore the first 0 (fib[0]) when considering sum
     for(i=2; i<=min(t, n); i++){
         fibo[i%2]=(fibo[(i-1)%2]+fibo[(i-2)%2])%10;
         total=(total+fibo[i%2])%10;
         if(i==remain)
             part=total;
     }
+    //small bug to fix: what if remain==1
+    // if(remain==1){
+    //     part = 1;
+    // }
     cout<<(part+total*(n/t))%10;
 }
 

@@ -37,7 +37,7 @@ void fast_count_segments(vector<point> &data) {
 
 bool cmp1(point a, point b){
     if(a.pos==b.pos)
-        return a.types > b.types;
+        return a.types > b.types; //if case of overlapping
     return a.pos < b.pos;
 }
 

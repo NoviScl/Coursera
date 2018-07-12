@@ -12,7 +12,7 @@ int main(){
 	}
 	sort(votes, votes+n);
 	int mid = votes[int(n/2)], count=0;
-	for(int i=0; i<; i++){
+	for(int i=0; i<n; i++){
 		if(votes[i]==mid)
 			count++;
 	}
